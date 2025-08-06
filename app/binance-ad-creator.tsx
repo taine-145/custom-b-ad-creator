@@ -42,7 +42,7 @@ export default function BinanceAdCreator() {
     fiatUnit: 'ZAR',
     initAmount: 100,
     minSingleTransAmount: 1000,
-    maxSingleTransAmount: 20000,
+    maxSingleTransAmount: 2000,
     price: 25.00,
     priceType: 1,
     tradeType: 'SELL',
@@ -638,7 +638,7 @@ export default function BinanceAdCreator() {
                   Important: Your hidden filters are now active
                 </p>
                 <p className="text-xs text-yellow-700">
-                  The buyer requirements you set will remain active even after you edit the price, amounts, and other visible settings on Binance. Only buyers meeting your criteria can see and trade with your ad.
+                  The buyer requirements you set will remain active even after you edit the price, amounts, and other visible settings on Binance. Only buyers meeting your criteria can open trade with your ad.
                 </p>
               </div>
 
