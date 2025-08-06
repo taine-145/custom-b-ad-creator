@@ -61,13 +61,13 @@ export default function Home() {
                     <p className="text-yellow-800 font-medium mb-2">Security Measures & Limitations:</p>
                     <ul className="text-sm text-yellow-800 space-y-1 list-disc list-inside">
                       <li><strong>No Storage:</strong> Your API keys are never stored or persisted anywhere - they are only used to forward requests to Binance</li>
-                      <li><strong>Default Permissions:</strong> Binance's default API permissions prevent withdrawals and most trading activities</li>
+                      <li><strong>Default Permissions:</strong> Binance&apos;s default API permissions prevent withdrawals and most trading activities</li>
                       <li><strong>Immediate Deletion:</strong> You should delete your API key immediately after creating your ad</li>
                     </ul>
                   </div>
 
                   <p>
-                    <strong>Your Responsibility:</strong> We strongly recommend keeping Binance's default API permissions unchanged. However, by using this service, you acknowledge the temporary security risk involved.
+                    <strong>Your Responsibility:</strong> We strongly recommend keeping Binance&apos;s default API permissions unchanged. However, by using this service, you acknowledge the temporary security risk involved.
                   </p>
                   
                   <p className="bg-yellow-200 rounded-md p-3 text-yellow-900 font-medium">
@@ -117,7 +117,7 @@ export default function Home() {
                 onClick={() => window.close()}
                 className="w-full py-3 px-6 border-2 border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition duration-200 font-medium"
               >
-                Exit - I Don't Want to Use This Tool
+                Exit - I Don&apos;t Want to Use This Tool
               </button>
             </div>
           </div>
