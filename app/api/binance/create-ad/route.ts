@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
     const BASE_URL = 'https://api.binance.com';
     const endpoint = '/sapi/v1/c2c/ads/post';
     
-    const params: Record<string, any> = {
+    const params: Record<string, string | number> = {
       recvWindow: 5000,
       timestamp: Date.now()
     };
@@ -31,7 +31,13 @@ export async function POST(request: NextRequest) {
     const signature = createSignature(queryString, secretKey);
     params.signature = signature;
     
-    const url = `${BASE_URL}${endpoint}?${new URLSearchParams(params)}`;
+
+    const stringParams: Record<string, string> = {};
+    Object.entries(params).forEach(([key, value]) => {
+      stringParams[key] = String(value);
+    });
+    
+    const url = `${BASE_URL}${endpoint}?${new URLSearchParams(stringParams)}`;
     
     const response = await fetch(url, {
       method: 'POST',
